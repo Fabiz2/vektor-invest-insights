@@ -1,24 +1,318 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vektor-invest-insights</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Vektor Invest - AI Investment Analysis Platform</title>
+    <meta name="description" content="Make informed investment decisions with AI-powered stock analysis" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <svg class="logo" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="#0F4C81"/>
+                    <path d="M8 24L16 8L24 24H8Z" fill="white"/>
+                    <circle cx="16" cy="16" r="3" fill="#21CE99"/>
+                </svg>
+                <span class="brand-name">Vektor Invest</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#stocks" class="nav-link">Stocks</a>
+                <a href="#watchlist" class="nav-link">Watchlist</a>
+                <a href="#learn" class="nav-link">Learn</a>
+                <a href="#search" class="nav-link">Search Stocks</a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
 
-    <meta property="og:title" content="vektor-invest-insights" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Make informed investment decisions with confidence</h1>
+                <p class="hero-subtitle">Vektor Invest analyzes market data to help you determine if a stock is worth buying</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Start Investing Now</button>
+                    <button class="btn btn-secondary">Learn How It Works</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#E8F4FD"/>
+                            <path d="M24 14C29.5228 14 34 18.4772 34 24C34 29.5228 29.5228 34 24 34C18.4772 34 14 29.5228 14 24C14 18.4772 18.4772 14 24 14Z" stroke="#0F4C81" stroke-width="2"/>
+                            <path d="M24 20L26 22L24 24L22 22L24 20Z" fill="#21CE99"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Analysis</h3>
+                    <p class="feature-description">AI-powered stock evaluation</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#E8F4FD"/>
+                            <path d="M14 24L20 18L28 26L34 20" stroke="#0F4C81" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="34" cy="20" r="2" fill="#21CE99"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Risk Assessment</h3>
+                    <p class="feature-description">Chart risk indicators</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#E8F4FD"/>
+                            <rect x="16" y="28" width="4" height="8" fill="#21CE99"/>
+                            <rect x="22" y="24" width="4" height="12" fill="#0F4C81"/>
+                            <rect x="28" y="20" width="4" height="16" fill="#21CE99"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Performance Tracking</h3>
+                    <p class="feature-description">Monitor your investments</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Dashboard Demo Section -->
+    <section class="dashboard-demo" id="dashboard">
+        <div class="container">
+            <h2 class="section-title">Dashboard Demo</h2>
+            
+            <div class="demo-nav">
+                <button class="demo-nav-item active">Stocks</button>
+                <button class="demo-nav-item">Watchlist</button>
+                <button class="demo-nav-item">Learn</button>
+                <button class="demo-nav-item">Search Stocks</button>
+            </div>
+            
+            <div class="stock-card">
+                <div class="stock-header">
+                    <div class="stock-info">
+                        <h3 class="stock-symbol">AAPL</h3>
+                        <p class="stock-name">Apple Inc.</p>
+                    </div>
+                    <div class="stock-price">
+                        <span class="price">$182.63</span>
+                        <span class="change positive">+2.65%</span>
+                    </div>
+                </div>
+                
+                <div class="stock-scores">
+                    <div class="score-item">
+                        <span class="score-label">Technical Score</span>
+                        <div class="score-bar">
+                            <div class="score-fill" style="width: 85.7%"></div>
+                        </div>
+                        <span class="score-value">8.57/10</span>
+                    </div>
+                    
+                    <div class="score-item">
+                        <span class="score-label">Fundamental Score</span>
+                        <div class="score-bar">
+                            <div class="score-fill" style="width: 78.7%"></div>
+                        </div>
+                        <span class="score-value">7.87/10</span>
+                    </div>
+                    
+                    <div class="score-item">
+                        <span class="score-label">Sentiment Score</span>
+                        <div class="score-bar">
+                            <div class="score-fill" style="width: 32.7%"></div>
+                        </div>
+                        <span class="score-value">3.27/10</span>
+                    </div>
+                </div>
+                
+                <div class="why-buy">
+                    <h4>Why Buy?</h4>
+                    <ul>
+                        <li>Strong technical indicators showing upward momentum</li>
+                        <li>Solid fundamental analysis with growing revenue</li>
+                        <li>Market leader in technology sector</li>
+                    </ul>
+                </div>
+                
+                <button class="btn btn-outline watchlist-btn" data-symbol="AAPL">
+                    Add to Watchlist
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="learn">
+        <div class="container">
+            <h2 class="section-title">How Vektor Invest Works</h2>
+            
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M8 32L16 8L24 20L32 12" stroke="#0F4C81" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Technical Analysis</h3>
+                    <p>Advanced chart patterns and indicators</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="10" y="20" width="6" height="12" fill="#21CE99"/>
+                            <rect x="17" y="15" width="6" height="17" fill="#0F4C81"/>
+                            <rect x="24" y="10" width="6" height="22" fill="#21CE99"/>
+                        </svg>
+                    </div>
+                    <h3>Risk Assessment</h3>
+                    <p>Comprehensive risk evaluation</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="8" width="24" height="16" rx="2" stroke="#0F4C81" stroke-width="2"/>
+                            <path d="M12 20L16 16L20 18L24 14" stroke="#21CE99" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Fundamental Analysis</h3>
+                    <p>Deep dive into company financials</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="8" width="24" height="24" rx="4" stroke="#0F4C81" stroke-width="2"/>
+                            <path d="M16 18H24M16 22H20" stroke="#21CE99" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Educational Resources</h3>
+                    <p>Learn investment strategies</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="12" stroke="#0F4C81" stroke-width="2"/>
+                            <path d="M16 18L18 20L24 14" stroke="#21CE99" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Sentiment Analysis</h3>
+                    <p>Market sentiment tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Stocks Section -->
+    <section class="recommended-stocks" id="stocks">
+        <div class="container">
+            <h2 class="section-title">Top Recommended Stocks</h2>
+            
+            <div class="stocks-grid" id="stocksGrid">
+                <!-- Stocks will be populated by JavaScript -->
+            </div>
+            
+            <div class="section-cta">
+                <button class="btn btn-outline">View All Recommendations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Make Smarter Investment Decisions?</h2>
+                <p class="cta-subtitle">Join thousands of investors who trust Vektor Invest for data-driven investment insights</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary">Create Free Account</button>
+                    <button class="btn btn-secondary">View Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <svg class="logo" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#0F4C81"/>
+                            <path d="M8 24L16 8L24 24H8Z" fill="white"/>
+                            <circle cx="16" cy="16" r="3" fill="#21CE99"/>
+                        </svg>
+                        <span class="brand-name">Vektor Invest</span>
+                    </div>
+                    <p>AI-powered investment analysis platform helping investors make informed decisions with confidence.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#stocks">Stocks</a></li>
+                        <li><a href="#watchlist">Watchlist</a></li>
+                        <li><a href="#learn">Learn</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Investment Guides</a></li>
+                        <li><a href="#">Market News</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                    <p class="contact-email">support@vektorinvest.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vektor Invest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
